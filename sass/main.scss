@@ -15,6 +15,9 @@
 @import "asset-icons";
 @import "footer";
 
+@import "modal";
+@import "toggle";
+
 body {
     font-family: 'Inter', sans-serif;
 }
@@ -67,5 +70,17 @@ body {
         }
     }
 
+}
+
+.hide-element {
+    display: none !important;
+}
+
+.show-element {
+    display: flex !important;
+}
+
+.show-element-block {
+    display: block !important;
 }
 
