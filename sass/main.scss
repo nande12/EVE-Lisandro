@@ -1,0 +1,71 @@
+/**
+* @author Allan Estrada
+*/
+
+/* BASE - Base styles, variables, mixins, etc*/
+@import "variables";
+@import "normalize";
+
+@import "main-nav";
+@import "secondary-nav";
+@import "buttons";
+@import "tabs";
+@import "dropdown-custom";
+@import "tables";
+@import "asset-icons";
+@import "footer";
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .page-content {
+        margin-bottom: auto;
+        padding: 45px 5px;
+    }
+
+    .footer {
+        margin-top: auto;
+    }
+
+    .main-title {
+        font-weight: 500;
+        font-size: 40px;
+        color: $black;
+        margin-bottom: 24px;
+    }
+}
+
+.side-by-side {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+
+    .cta {
+        width: 210px;
+        margin-top: 24px;
+
+        a {
+            margin: 0;
+        }
+    }
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+
+        .cta {
+            margin-left: auto;
+        }
+    }
+
+}
+

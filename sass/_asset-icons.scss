@@ -1,0 +1,65 @@
+.asset {
+    font-weight: 600;
+    color: #221F20;
+    // padding-left: 16px;
+    display: flex;
+
+    &.sm {
+        font-size: 12px;
+        line-height: 20px;
+
+        &::before {
+            width: 12px;
+            height: 18px;
+            margin-right: 4px;
+        }
+    }
+
+    &.lg {
+        font-size: 14px;
+        line-height: 21px;
+
+        &::before {
+            width: 16px;
+            height: 23px;
+            margin-right: 8px;
+        }
+    }
+
+    &::before {
+        content: "";
+        display: block;        
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-y: center;
+    }
+
+    &.matic {
+
+        &::before {
+            background-image: url('../img/matic.svg');
+        }
+    }
+
+    &.eth {
+
+        &::before {
+            background-image: url('../img/eth.svg');
+        }
+    }
+
+    &.shib {
+
+        &::before {
+            background-image: url('../img/shib.svg');
+        }
+    }
+
+    &.dai {
+
+        &::before {
+            background-image: url('../img/dai.svg');
+        }
+    }
+
+}
