@@ -17,6 +17,7 @@
 
 @import "modal";
 @import "toggle";
+@import "cards";
 
 body {
     font-family: 'Inter', sans-serif;
@@ -34,6 +35,13 @@ body {
     .page-content {
         margin-bottom: auto;
         padding: 45px 5px;
+
+        &.dashboard {
+            padding: 45px 10px;
+            @media (min-width: 768px) {
+                padding: 45px 24px;
+            }
+        }
     }
 
     .footer {
@@ -70,6 +78,15 @@ body {
         }
     }
 
+}
+
+.margin-top {
+    margin-top: 20px;
+    padding-bottom: 0;
+
+    .with-border {
+        margin-bottom: 0;
+    }
 }
 
 .hide-element {

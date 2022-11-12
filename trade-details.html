@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Trade details</title>
+</head>
+<body>
+
+    <!-- MAIN NAV -->
+    <nav class="main-nav">
+        <div class="logo"><img src="./img/full-Logo.svg"></div>
+        <div class="ctas">
+            <a href="#" class="btn blue-btn">Trade with ZERO FEES</a>
+            <a href="#" class="btn transparent-btn"><span><img src="./img/poligon-network.svg"></span> Polygon Network</a>
+            <a href="#" class="btn rounded-blue-btn">Polygon Network <span><img src="./img/MetaMask_Fox 1.svg"></span></a>
+        </div>
+    </nav>
+
+    <!-- MOBILE SECONDARY NAV -->
+    <section class="mobile-secondary-nav">
+        <button class="accordion">Secondary Nav <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 7.71" ><path d="M12.8.21L7 6 1.21.21a.7.7 0 00-1 0 .7.7 0 000 1L6.5 7.5a.7.7 0 001 0l6.29-6.29a.7.7 0 000-1 .69.69 0 00-.99 0z"></path></svg></button>
+        <div class="panel">
+            <div class="links">
+                <a href="#" class="link"><span><img src="./img/Dashboard.svg"></span> Dashboard</a>
+                <a href="#" class="link onPage"><span><img src="./img/Smart-Trade-Blue.svg"></span> Smart Trades</a>
+                <a href="#" class="link"><span><img src="./img/Option-Trades.svg"></span> Options Trading</a>
+                <a href="#" class="link"><span><img src="./img/lending-pool.svg"></span> Lending Pool</a>
+            </div>  
+            
+            <div class="link-alone">
+                <a href="#">Knowledge base</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WRAPPER -->
+    <section class="wrapper">
+
+        <!-- SIDEBAR -->
+        <section class="sidebar">
+            
+            <div class="links">
+                <a href="#" class="link"><span><img src="./img/Dashboard.svg"></span> Dashboard</a>
+                <a href="#" class="link onPage"><span><img src="./img/Smart-Trade-Blue.svg"></span> Smart Trades</a>
+                <a href="#" class="link"><span><img src="./img/Option-Trades.svg"></span> Options Trading</a>
+                <a href="#" class="link"><span><img src="./img/lending-pool.svg"></span> Lending Pool</a>
+            </div>  
+
+            <div class="link-alone">
+                <a href="#">Knowledge base</a>
+            </div>
+
+        </section>
+
+        <!-- CONTENT -->
+        <section class="main-content">
+            
+            <div class="page-content">
+                <h1 class="main-title">Smart Trades</h1>
+
+                <!-- TABS -->
+                <div class="container--tabs">
+                    <section class="row">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#tab-1">Offers book</a></li>
+                            <li class=""><a href="#tab-2">My trades</a></li>
+                            <li class=""><a href="#tab-3">Claim</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="tab-1" class="tab-pane active"> 
+                                <div class="tab-content-wrapper">
+
+                                    <p>Search for a pair</p>
+                                    
+                                    <div class="side-by-side">
+                                        <div class="dropdowns">
+                                            <select id="normal-select-1" placeholder-text="Search for an asset">
+                                                <option value="matic" class="select-dropdown__list-item asset matic sm">MATIC (Polygon)</option>
+                                                <option value="eth" class="select-dropdown__list-item asset eth sm">ETH (Ethereum)</option>
+                                                <option value="shib" class="select-dropdown__list-item asset shib sm">SHIB (Shiba Inu)</option>
+                                                <option value="dai" class="select-dropdown__list-item asset dai sm">DAI (Dai)</option>
+                                            </select>
+                                            <!-- The only thing that needs to be different is select ID -->
+                                            <select id="normal-select-2" placeholder-text="Search for an asset">
+                                                <option value="matic" class="select-dropdown__list-item asset matic sm">MATIC (Polygon)</option>
+                                                <option value="eth" class="select-dropdown__list-item asset eth sm">ETH (Ethereum)</option>
+                                                <option value="shib" class="select-dropdown__list-item asset shib sm">SHIB (Shiba Inu)</option>
+                                                <option value="dai" class="select-dropdown__list-item asset dai sm">DAI (Dai)</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="cta">
+                                            <a href="#" class="btn blue-btn">Create an offer</a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <div class="table-container">
+                                        <table class="smart-trades-table the-table">
+                                            <tr>
+                                                <th class="set-col">Set</th>
+                                                <th class="accept-col">Acept</th>
+                                                <th class="available-col">Available</th>
+                                                <th class="discount-col">Discount/Premium</th>
+                                                <th class="price-col">Price</th>
+                                                <th class="vesting-col">Vesting</th>
+                                                <th class="cta-col"></th>
+                                            </tr>
+                                            <tr>
+                                                <td class="set-col">
+                                                    <div class="asset matic lg">
+                                                        MATIC
+                                                    </div>
+                                                </td>
+                                                <td class="accept-col">
+                                                    <div class="asset eth lg">
+                                                        ETH
+                                                    </div>
+                                                </td>
+                                                <td class="available-col">
+                                                    <p class="price grey-text-table">500</p>
+                                                </td>
+                                                <td class="discount-col">
+                                                    <p class="price grey-text-table">None</p>
+                                                </td>
+                                                <td class="grey-text-table price-col">ZZZ ETH per Matic</td>
+                                                <td class="grey-text-table vesting-col">None</td>
+                                                <td class="cta-col">
+                                                    <button class="btn transparent-btn-sm">Details</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="set-col">
+                                                    <div class="asset matic lg">
+                                                        MATIC
+                                                    </div>
+                                                </td>
+                                                <td class="accept-col">
+                                                    <div class="asset shib lg">
+                                                        ETH
+                                                    </div>
+                                                </td>
+                                                <td class="available-col">
+                                                    <p class="price grey-text-table">124</p>
+                                                </td>
+                                                <td class="discount-col">
+                                                    <p class="price grey-text-table">None</p>
+                                                </td>
+                                                <td class="grey-text-table price-col">ZZZ ETH per Matic</td>
+                                                <td class="grey-text-table vesting-col">None</td>
+                                                <td class="cta-col">
+                                                    <button class="btn transparent-btn-sm">Details</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="set-col">
+                                                    <div class="asset dai lg">
+                                                        MATIC
+                                                    </div>
+                                                </td>
+                                                <td class="accept-col">
+                                                    <div class="asset eth lg">
+                                                        ETH
+                                                    </div>
+                                                </td>
+                                                <td class="available-col">
+                                                    <p class="price grey-text-table">124</p>
+                                                </td>
+                                                <td class="discount-col">
+                                                    <p class="price grey-text-table">None</p>
+                                                </td>
+                                                <td class="grey-text-table price-col">ZZZ ETH per Matic</td>
+                                                <td class="grey-text-table vesting-col">None</td>
+                                                <td class="cta-col">
+                                                    <button class="btn transparent-btn-sm">Details</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="set-col">
+                                                    <div class="asset shib lg">
+                                                        MATIC
+                                                    </div>
+                                                </td>
+                                                <td class="accept-col">
+                                                    <div class="asset matic lg">
+                                                        ETH
+                                                    </div>
+                                                </td>
+                                                <td class="available-col">
+                                                    <p class="price grey-text-table">124</p>
+                                                </td>
+                                                <td class="discount-col">
+                                                    <p class="price grey-text-table">None</p>
+                                                </td>
+                                                <td class="grey-text-table price-col">ZZZ ETH per Matic</td>
+                                                <td class="grey-text-table vesting-col">None</td>
+                                                <td class="cta-col">
+                                                    <button class="btn transparent-btn-sm">Details</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="set-col">
+                                                    <div class="asset matic lg">
+                                                        MATIC
+                                                    </div>
+                                                </td>
+                                                <td class="accept-col">
+                                                    <div class="asset dai lg">
+                                                        ETH
+                                                    </div>
+                                                </td>
+                                                <td class="available-col">
+                                                    <p class="price grey-text-table">124</p>
+                                                </td>
+                                                <td class="discount-col">
+                                                    <p class="price grey-text-table">None</p>
+                                                </td>
+                                                <td class="grey-text-table price-col">ZZZ ETH per Matic</td>
+                                                <td class="grey-text-table vesting-col">None</td>
+                                                <td class="cta-col">
+                                                    <button class="btn transparent-btn-sm">Details</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="set-col">
+                                                    <div class="asset dai lg">
+                                                        MATIC
+                                                    </div>
+                                                </td>
+                                                <td class="accept-col">
+                                                    <div class="asset shib lg">
+                                                        ETH
+                                                    </div>
+                                                </td>
+                                                <td class="available-col">
+                                                    <p class="price grey-text-table">124</p>
+                                                </td>
+                                                <td class="discount-col">
+                                                    <p class="price grey-text-table">None</p>
+                                                </td>
+                                                <td class="grey-text-table price-col">ZZZ ETH per Matic</td>
+                                                <td class="grey-text-table vesting-col">None</td>
+                                                <td class="cta-col">
+                                                    <button class="btn transparent-btn-sm">Details</button>
+                                                </td>
+                                            </tr>
+                                        </table>  
+                                    </div>
+                                               
+
+                                </div>
+                            </div> 
+                            <div id="tab-2" class="tab-pane">
+                                <div class="tab-content-wrapper">
+                                    <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
+                                    <span class="col-md-10">
+                                        <h3>Feature 2</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="tab-3" class="tab-pane">
+                                <div class="tab-content-wrapper">
+                                    <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
+                                    <span class="col-md-10">
+                                        <h3>Feature 3</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Trigger/Open The Modal -->
+                <!-- Elements used for triggering modals to open -->
+                <button class="trigger-modal">Big Modal</button>
+                <button class="trigger-modal">Confirmation</button>
+                <button class="trigger-modal">Pending</button>
+                <button class="trigger-modal">Confirmed</button>
+
+                <!-- BIG MODAL -->
+                <div class="modal">
+
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h2 class="modal-title">Trade details</h2>
+                            <span class="btn-close">&times;</span>
+                        </div>
+
+                        <div class="modal-section modal-section-one two-cols margin-top mobile-obe-col">
+
+                            <div class="left">
+
+                                <div class="trade-item">
+                                    <p class="subject">Trading pair</p>
+                                    <p class="trade-detail"><span class="asset matic lg">MATIC</span><span class="slash">/</span><span class="asset eth lg">ETH</span></p>
+                                </div>
+
+                                <div class="trade-item">
+                                    <p class="subject">Available</p>
+                                    <p class="trade-detail">500 MATIC</p>
+                                </div>
+
+                                <div class="trade-item">
+                                    <p class="subject">Price <span class="tooltip left"><img src="./img/info-icon.svg"><span class="tooltip-box">Text goes here</span></span></p>
+                                    <p class="trade-detail">Dynamic</p>
+                                </div>
+
+                                <div class="trade-item">
+                                    <p class="subject">Discount/Premium</p>
+                                    <p class="trade-detail">None</p>
+                                </div>
+
+                                <div class="trade-item">
+                                    <p class="subject">Vesting</p>
+                                    <p class="trade-detail">None</p>
+                                </div>
+
+                            </div>  
+                            
+                            <div class="right modal-section with-border">
+                                <h2 class="modal-title">Buy</h2>
+                                
+                                <div class="input-group">
+                                    <p class="dropdown-label">Quantity</p>
+                                    <div class="input-container">
+                                        <input type="text" id="quantity" name="quantity" placeholder="Enter a quantity">
+                                        <span class="selected-asset-label">MATIC</span>
+                                    </div>
+                                    <div class="input-info">
+                                        <p class="modal-disc">1 MATIC ≈ XX ETH at current price</p>
+                                        <div class="badge blue">MAX</div>
+                                    </div>
+                                </div>
+
+                                <div class="input-group">
+                                    <div class="input-toggle">
+                                        <p class="dropdown-label">Total stimated cost <span class="tooltip right"><img src="./img/info-icon.svg"><span class="tooltip-box">Text goes here</span></span></p>
+                                        
+                                    </div>
+                                    <div class="input-container">
+                                        <input class="action-input" type="text" id="total" name="total" placeholder="XXX" disabled>
+                                        <span class="selected-asset-label disabled">ETH</span>
+                                    </div> 
+                                    <div class="input-info">
+                                        <p class="modal-disc">Available: XX ETH</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="divide-line"></div>                        
+
+                        <div class="modal-section modal-section-two">
+                            <h2 class="modal-title">Offer summary</h2>
+                            <p class="modal-desc">Double check your offer details.</p>
+
+                            <div class="summary">
+
+                                <div class="item">
+                                    <p class="subheading">You will pay</p>
+                                    <p class="detail summary-asset eth">XX ETH</p>
+                                </div>
+
+                                <div class="item">
+                                    <p class="subheading">You will get</p>
+                                    <p class="detail summary-asset matic">XX MATIC</p>
+                                </div>
+
+                                <div class="item">
+                                    <p class="subheading">Vesting</p>
+                                    <p class="detail">None</p>
+                                </div>
+
+                                <div class="item">
+                                    <p class="subheading">Fee estimate <span class="tooltip left"><img src="./img/info-icon.svg"><span class="tooltip-box">Text goes here</span></span></p>
+                                    <p class="detail">XX ETH</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="warning">
+                            <p>Warning: Verify the contract address of the asset you are buying.</p>
+                            <a href="#" class="warning-link">View on Polyscan</a>
+                        </div>
+
+                        <div class="ctas">
+                            <button class="btn cta-close square-transparent" data-close="close-modal">Close</button>
+                            <button class="btn disable blue-btn">Buy</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- CONFIRMATION -->
+                <div class="modal">
+
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h2 class="modal-title">Confirmation</h2>
+                            <span class="btn-close">&times;</span>
+                        </div>
+
+                        <div class="divide-line"></div>
+
+                        <div class="modal-section modal-section-four with-border">
+                            <h2 class="modal-title">Trade overview</h2>
+                            <p class="modal-desc">Please, double check all this informations.</p>
+
+                            <div class="summary">
+                                <div class="item">
+                                    <p class="subheading">You are buying</p>
+                                    <p class="detail summary-asset matic">XX MATIC</p>
+                                </div>
+
+                                <div class="item">
+                                    <p class="subheading">You will pay</p>
+                                    <p class="detail">XX ETH per MATIC</p>
+                                </div>
+
+                                <div class="item">
+                                    <p class="subheading">Discount/Premium</p>
+                                    <p class="detail">None</p>
+                                </div>
+
+                                <div class="item">
+                                    <p class="subheading">Total estimated cost</p>
+                                    <p class="detail">XX ETH</p>
+                                </div>
+
+                                <div class="item">
+                                    <p class="subheading">Vesting</p>
+                                    <p class="detail">None</p>
+                                </div>
+
+                    
+                            </div>
+                        </div>
+
+                        <div class="ctas">
+                            <button class="btn cta-close square-transparent" data-close="close-modal">Back</button>
+                            <button class="btn disable blue-btn" disabled>Confirm</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- PENDINMG -->
+                <div class="modal">
+
+                    <div class="modal-content smaller"> <!--MAE, Ojo que acá va la clase smaller para que sea mas pequeño-->
+
+                        <div class="modal-header">
+                            <h2 class="modal-title">Pending...</h2>
+                            <span class="btn-close">&times;</span>
+                        </div>
+
+                        <div class="metaMask-logo"><img src="./img/MetaMask_Fox-1.svg"></div>
+
+                        <span class="loader"></span>
+
+                        <p class="waiting-text">Waiting for MetaMask.</p>
+
+                        <p class="waiting-text-2">Confirm your action in MetaMask.</p>
+
+                        <div class="ctas">
+                            <button class="btn cta-close red-cta" data-close="close-modal">Cancel</button>
+
+                            <a href="#" class="need-help">Need help?</a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <!-- CONFIRMED -->
+                <div class="modal">
+
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h2 class="modal-title">Confirmation</h2>
+                            <span class="btn-close">&times;</span>
+                        </div>
+
+                        <div class="divide-line"></div>
+
+                        <div class="modal-section modal-section-four with-border center-content">
+
+                            <img src="./img/confirmed-check.svg">
+
+                            <p class="main-desc">Your trade has completed ! If your trade have a vesting period, go to the claim tab.</p>
+                            <a href="#" class="the-link">View on polyscan</a>
+
+                            
+                        </div>
+
+                        <div class="ctas">
+                            <button class="btn cta-close square-transparent" data-close="close-modal">Close</button>
+                        </div>
+
+                    </div>
+
+                </div>
+               
+
+
+            </div>
+
+            <!-- FOOTER -->
+            <footer class="footer">
+                <div class="left">
+                    <p>Copyright Eve DeFi Exchange 2022. All Rights Reserved.</p>
+                    <p class="smaller">By using Eve DeFi Exchange you are agreeing to our Terms of Service.</p>
+                </div>
+                <div class="right">
+                    <div class="social-icons">
+                        <a href="#"><img src="./img/telegram.svg"></a>
+                        <a href="#"><img src="./img/social2.svg"></a>
+                        <a href="#"><img src="./img/twitter.svg"></a>
+                        <a href="#"><img src="./img/instagram.svg"></a>
+                    </div>
+                </div>
+            </footer>
+
+        </section>
+
+    </section>
+
+    <script src="./js/secondary-nav.js"></script>
+    <script src="./js/tabs.js"></script>
+    <script src="./js/dropdown.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/actions.js"></script>
+
+    
+    
+</body>
+</html>
